@@ -1,0 +1,78 @@
+Login Functionality - Traceability Matrix,,,,,,
+Requirements to Test Cases Mapping,,,,,,
+Requirement ID,Requirement Description,Test Case ID,Test Case Description,Priority,Test Type,Status
+REQUIREMENT 1,Valid Login Authentication,,,,,
+REQUIREMENT 1.1,User can login with valid username and password,TC-001,Verify successful login with valid credentials,High,Functional,✅
+REQUIREMENT 1.2,System authenticates user against database,TC-002,Verify authentication process validates against user database,High,Integration,✅
+REQUIREMENT 1.3,User is redirected to dashboard after successful login,TC-003,Verify redirection to correct landing page post-login,High,Functional,✅
+REQUIREMENT 2,Invalid Login Handling,,,,,
+REQUIREMENT 2.1,Display error message for invalid username,TC-004,Verify error message for non-existent username,High,Functional,✅
+REQUIREMENT 2.2,Display error message for invalid password,TC-005,Verify error message for incorrect password,High,Functional,✅
+REQUIREMENT 2.3,Display error message for empty credentials,TC-006,Verify error message when username field is empty,Medium,Functional,✅
+REQUIREMENT 2.3,Display error message for empty credentials,TC-007,Verify error message when password field is empty,Medium,Functional,✅
+REQUIREMENT 2.4,No sensitive information in error messages,TC-008,Verify error messages don't reveal system information,High,Security,⏳
+REQUIREMENT 3,Account Security,,,,,
+REQUIREMENT 3.1,Account lockout after failed login attempts,TC-009,Verify account locks after 5 consecutive failed attempts,High,Security,✅
+REQUIREMENT 3.2,Password masking in input field,TC-010,Verify password field masks input characters,Medium,Security,✅
+REQUIREMENT 3.3,Session timeout after inactivity,TC-011,Verify user session expires after 360 minutes inactivity,Medium,Security,⏳
+REQUIREMENT 3.4,Secure password transmission,TC-012,Verify passwords are transmitted over HTTPS,High,Security,✅
+REQUIREMENT 4,User Interface Requirements,,,,,
+REQUIREMENT 4.1,Login form contains required fields,TC-013,Verify presence of username and password fields,Medium,UI,✅
+REQUIREMENT 4.2,Login button is functional,TC-014,Verify login button triggers authentication process,Medium,UI,✅
+REQUIREMENT 4.3,Remember Me functionality,TC-015,Verify Remember Me checkbox saves login state,Low,Functional,⏳
+REQUIREMENT 4.4,Forgot Password link is present,TC-016,Verify Forgot Password link redirects to reset page,Medium,UI,✅
+REQUIREMENT 4.5,Responsive design on mobile devices,TC-017,Verify login form displays correctly on mobile,Medium,UI,⏳
+REQUIREMENT 5,Performance Requirements,,,,,
+REQUIREMENT 5.1,Login response time under 3 seconds,TC-018,Verify login process completes within 3 seconds,Medium,Performance,✅
+REQUIREMENT 5.2,Handle concurrent login attempts,TC-019,Verify system handles 100 concurrent login requests,Low,Performance,⏳
+REQUIREMENT 6,Accessibility Requirements,,,,,
+REQUIREMENT 6.1,Screen reader compatibility,TC-020,Verify login form is accessible via screen readers,Medium,Accessibility,⏳
+REQUIREMENT 6.2,Keyboard navigation support,TC-021,Verify login form can be navigated using keyboard only,Medium,Accessibility,⏳
+REQUIREMENT 6.3,Proper ARIA labels,TC-022,Verify form fields have appropriate ARIA labels,Low,Accessibility,⏳
+REQUIREMENT 7,Browser Compatibility,,,,,
+REQUIREMENT 7.1,Chrome browser support,TC-023,Verify login functionality works in Chrome browser,Medium,Compatibility,✅
+REQUIREMENT 7.2,Firefox browser support,TC-024,Verify login functionality works in Firefox browser,Medium,Compatibility,✅
+REQUIREMENT 7.3,Safari browser support,TC-025,Verify login functionality works in Safari browser,Medium,Compatibility,⏳
+REQUIREMENT 7.4,Edge browser support,TC-026,Verify login functionality works in Edge browser,Medium,Compatibility,⏳
+Test Coverage Summary,,,,,,
+Category,Total Requirements,Requirements Covered,Coverage %,,,
+Functional,8,8,100%,,,
+Security,6,4,67%,,,
+UI/UX,5,3,60%,,,
+Performance,2,1,50%,,,
+Accessibility,3,0,0%,,,
+Compatibility,4,2,50%,,,
+Total,28,18,64%,,,
+Legend,,,,,,
+✅ Passed: Test case executed and passed,,,,,,
+❌ Failed: Test case executed but failed,,,,,,
+⏳ Pending: Test case not yet executed,,,,,,
+🚫 Blocked: Test case blocked by dependencies,,,,,,
+Risk Assessment,,,,,,
+Risk Level,Requirements,Count,Mitigation,,,
+High,"REQUIREMENT 1.*, REQUIREMENT 2.1, REQUIREMENT 2.2, REQUIREMENT 2.4, REQUIREMENT 3.1, REQUIREMENT 3.4",7,All high-risk requirements covered by tests,,,
+Medium,"REQUIREMENT 2.3, REQUIREMENT 3.2, REQUIREMENT 3.3, REQUIREMENT 4., REQUIREMENT 5.1, REQUIREMENT 6.1, REQUIREMENT 6.2, REQUIREMENT 7.",15,Most medium-risk requirements covered,,,
+Low,"REQUIREMENT 4.3, REQUIREMENT 5.2, REQUIREMENT 6.3",3,Lower priority for current release,,,
+Test Execution Status,,,,,,
+Current Sprint Progress,,,,,,
+Total Test Cases: 26,,,,,,
+Executed: 16 (62%),,,,,,
+Passed: 14 (54%),,,,,,
+Failed: 2 (8%),,,,,,
+Pending: 10 (38%),,,,,,
+Failed Test Cases Requiring Attention,,,,,,
+TC-009: Account lockout mechanism not working correctly,,,,,,
+TC-012: HTTPS enforcement needs configuration,,,,,,
+Next Steps,,,,,,
+"Fix failed security test cases (TC-009, TC-012)",,,,,,
+"Execute pending accessibility tests (TC-020, TC-021, TC-022)",,,,,,
+"Complete browser compatibility testing (TC-025, TC-026)",,,,,,
+Performance testing for concurrent users (TC-019),,,,,,
+Notes,,,,,,
+All high-priority functional requirements have been tested and verified,,,,,,
+Security requirements need additional attention before release,,,,,,
+Accessibility testing should be prioritized for compliance,,,,,,
+Browser compatibility testing in progress,,,,,,
+,,,,,,
+"Last Updated: June 7, 2025",,,,,,
+Document Version: 1.0,,,,,,
