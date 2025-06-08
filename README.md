@@ -25,6 +25,8 @@ it is necessary to install playwright to excute the tests, the command is:
 and then install the browsers
 `playwright install`
 
+these commands should be run inside the  `ui` directory. 
+
 
 
 
