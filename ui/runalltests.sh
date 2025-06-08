@@ -4,8 +4,7 @@
 set +e
 
 # Define test files
-TEST_FILES=("test_login.py" "test_stored_credentials.py" "test_forgot_password.py")  # Replace with your files
-
+TEST_FILES=("test_login.py" "test_stored_credentials.py" "test_forgot_password.py") 
 # Browsers
 BROWSERS=("chromium" "firefox" "webkit")
 
