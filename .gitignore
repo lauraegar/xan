@@ -10,5 +10,6 @@
 .pytest_cache/
 **/logs/
 **/.DS_Store/
-ß
+*.log
+
 
