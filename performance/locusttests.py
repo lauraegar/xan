@@ -7,8 +7,8 @@ class LoginUser(HttpUser):
     @task
     def login(self):
         response = self.client.post("/bpapi/rest/security/session", json={
-            "username": "MANQ625",
-            "password": "c961g8Iy"
+            "username": "USERNAME",
+            "password": "PASSWORD"
         })
 
         # Optional assertions
