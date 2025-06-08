@@ -17,6 +17,16 @@ a log file is created from the test output to capture failures, and a report is 
 #### performance testing
 the api could have performance tests excuted againt it using locust, but all attempts to carry out performance testing were rejected with a 429.
 
+### <a href="https://playwright.dev/python/docs/intro#installing-playwright-pytest">Playwright</a>
+
+it is necessary to install playwright to excute the tests, the command is:
+`pip install pytest-playwright`
+
+and then install the browsers
+`playwright install`
+
+
+
 
 
 
