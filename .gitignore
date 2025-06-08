@@ -1,0 +1,14 @@
+*.json
+*.txt
+**/__pycache__/
+**/.pytest_cache/
+**/logs/
+**/playwright/
+**/*.png
+**/test_run_report.html
+**/*.html
+.pytest_cache/
+**/logs/
+**/.DS_Store/
+ß
+
