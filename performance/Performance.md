@@ -12,3 +12,5 @@ running tests from a command line:
 web interface is at `localhost:8089`
 
 command to run with web interface is for example : `locust -f locusttests.py --host=https://api.matchbook.com`
+
+it is necessary to enter a valid username and password in the test files. 
