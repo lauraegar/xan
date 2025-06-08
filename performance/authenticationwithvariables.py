@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 
 LOGIN_URL="https://api.matchbook.com/bpapi/rest/security/session"
 
-USERNAME="MANQ625"
-PASSWORD="c961g8Iy"
+USERNAME=""
+PASSWORD=""
 WRONG_USERNAME="MAN12345"
 WRONG_PASSWORD="2dnfew)kjdfn"
 EMPTY_PASSWORD=""
