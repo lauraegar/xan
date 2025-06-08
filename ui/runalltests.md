@@ -7,3 +7,6 @@ tests can be executed as a test suite by entering the following commands:
 
 to run tests indivdually, just use for example 
 `pytest test_login.py` or some other file name.
+
+update test files with your credentials.
+e.g. `test_login.py`
